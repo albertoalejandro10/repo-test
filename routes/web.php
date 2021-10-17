@@ -11,5 +11,5 @@ Route::get('/', [App\Http\Controllers\PageController::class, 'dashboard'])
 Route::resource('exercises', App\Http\Controllers\ExerciseController::class)
     ->middleware('auth:sanctum');
 
-Route::resource('reservations', App\Http\Controllers\ReservationController::class)
+Route::post('/reservations', [App\Http\Controllers\ReservationController::class, 'store'])
     ->middleware('auth:sanctum');

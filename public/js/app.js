@@ -20764,7 +20764,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submit: function submit() {
-      this.$inertia.post(this.route('reservations.store'), this.form);
+      this.$inertia.post('/reservations', this.form);
     }
   }
 }));

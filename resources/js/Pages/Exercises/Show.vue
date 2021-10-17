@@ -90,7 +90,7 @@
         },
         methods: {
             submit() {
-                this.$inertia.post(this.route('reservations.store'), this.form)
+                this.$inertia.post('/reservations', this.form)
             },
         },
     })
